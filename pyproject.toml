@@ -18,7 +18,9 @@ packages = [
 hello = "hello.main:say_hello"
 
 [tool.poetry.dependencies]
-python = "^3.8.1"
+python = "^3.13.7"
+
+flask = { version = "3.1.2", optional = false }
 
 [tool.poetry.group.dev]
 optional = true
