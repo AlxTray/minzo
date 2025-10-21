@@ -1,6 +1,3 @@
-# EditorConfig is awesome: https://EditorConfig.org
-
-# top-most EditorConfig file
 root = true
 
 [*]
@@ -30,13 +27,13 @@ indent_size = 4
 [*.asm]
 indent_size = 8
 
-# Ideal settings - some plugins might support these.
-[*.js]
-quote_type = single
-
 [{*.c,*.cc,*.h,*.hh,*.cpp,*.hpp,*.m,*.mm,*.mpp,*.js,*.java,*.go,*.rs,*.php,*.ng,*.jsx,*.ts,*.d,*.cs,*.swift}]
+indent_size = 2
 curly_bracket_next_line = false
 spaces_around_operators = true
 spaces_around_brackets = outside
-# close enough to 1TB
 indent_brace_style = K&R
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
