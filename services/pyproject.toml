@@ -3,8 +3,6 @@ name = "minzo"
 version = "0.1.0"
 description = "A personal finance dashboard"
 authors = ["Alex Ashby <alex.ashby02@icloud.com>", "Alex Beaumont <alexander.beaumont02@gmail.com>"]
-license = "MIT"
-readme = "README.md"
 homepage = "https://alxtray.github.io/minzo/"
 repository = "https://github.com/alxtray/minzo"
 packages = [
@@ -13,6 +11,9 @@ packages = [
 
 [tool.poetry.urls]
 "Bug Tracker" = "https://github.com/alxtray/minzo/issues"
+
+[tool.poetry.scripts]
+minzo = "minzo.app:run_dev"
 
 [tool.poetry.dependencies]
 python = "^3.13.7"
